@@ -1,0 +1,70 @@
+body,
+dl,
+dd,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form,
+header,
+section,
+article,
+footer {
+	margin: 0;
+}
+
+em,
+i,
+b {
+	font-style: normal
+}
+
+a {
+	text-decoration: none
+}
+
+a:hover {
+	text-decoration: underline
+}
+
+a,
+img,
+input {
+	border: none;
+}
+
+button,
+input,
+select,
+textarea {
+	/*font-size: 100%;*/
+	outline: none
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+td,
+th,
+ul,
+ol {
+	padding: 0
+}
+
+ul li {
+	list-style: none;
+}
+
+body,
+html {
+	color: #262626;
+	height: 100%;
+	font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}

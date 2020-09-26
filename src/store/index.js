@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-// Vue.use(Vuex);
+Vue.use(Vuex);
 
 
 import * as Members from './member/actions';
@@ -8,15 +8,15 @@ import * as Members from './member/actions';
 /* 公共state, mutations, actions */
 const storage = window.sessionStorage;
 const state = {
-    appId:"10010",
+    appId: "10010",
     city: [],  // 省市区
     nickname: storage.getItem('nickname') || '',
     idNo: storage.getItem('idNo') || '',
     /* nickname: storage.getItem('nickname') || '',
     nickname: storage.getItem('nickname') || '', */
 }
-const mutations={
-    setOpenid(state,str){ //设置openid
+const mutations = {
+    setOpenid(state, str) { //设置openid
         state.openid = str;
     },
     setNickname(state, name) {
@@ -40,9 +40,9 @@ const actions = {
     ...Members,
 }
 
-/* export default new Vuex.Store({
-    state,mutations,actions,
+export default new Vuex.Store({
+    state, mutations, actions,
     modules: {//引入模块
-        
+
     }
-}) */
+})

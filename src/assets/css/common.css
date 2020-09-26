@@ -1,0 +1,160 @@
+/* 页面通用样式 */
+
+.contain_img{
+	object-fit: contain;
+}
+.cover_img{
+	object-fit: cover;
+}
+
+
+/* *********************** 默认样式 */
+.height100 {
+	height: 100%;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+}
+
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+	width: 4px;
+	background-color: #e4e4e4;
+}
+
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: #558dfb;
+}
+
+/* ***************** 布局常用类 */
+.border_box{
+	box-sizing: border-box;
+}
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.width_100 {
+	width: 100%;
+}
+
+.display_flex {
+	display: flex;
+}
+
+.position_relative {
+	position: relative;
+}
+
+/* *** flex 布局 */
+.flex_column{
+	flex-direction: column;
+}
+
+.flex_center {
+	display: flex;
+	align-items: center;
+}
+
+.flex_justify_between {
+	display: flex;
+	justify-content: space-between;
+}
+
+.flex_between {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.clear_fix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.overflow_hidden{
+	overflow: hidden;
+}
+
+/* ******************* 文字样式类 */
+
+.text_right {
+	text-align: right;
+}
+
+.text_center {
+	text-align: center;
+}
+
+.text_left {
+	text-align: left;
+}
+
+.text_overflow {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+.text_overflow2 {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+.color999{
+	color: #999;
+}
+.font_size18{
+	font-size: 18px;
+}
+/* ********************** 主题基调  */
+.theme_bg{
+	background-color: #558dfb;
+	color: #fff;
+}
+.theme_color{
+	color: #558dfb;
+}
+
+/* ********************** 修改组件样式  */
+.el-radio-group .el-radio__label {
+	font-size: 16px;
+}
+
+.el-checkbox__label {
+	font-size: 16px;
+}
+
+/*时间线*/
+.tiemline_wrap .el-timeline-item__timestamp {
+	color: #669900;
+}
+
+/* 导师评估 */
+.options_wrap .el-radio-group .el-radio__label{
+	font-size: 14px;
+}
+
+/*下边距缩小的form*/
+.min_form .el-form-item{
+	margin-bottom: 0;
+}
+
+.choose_theme_content .el-checkbox__input.is-disabled+span.el-checkbox__label{
+	color: #999;
+}

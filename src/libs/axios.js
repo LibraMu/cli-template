@@ -20,7 +20,7 @@ const removePending = (key, isRequest = false) => {
 }
 
 // 请求标识
-const getRequestIdentify = (config, isReuest = false) => {
+const getRequestIdentify = (config) => {
     return config.url;
 }
 
@@ -30,7 +30,7 @@ instance.interceptors.request.use((config) => {
     if (!!sessionStorage.getItem('token')) {
         config.headers['BhtToken'] = sessionStorage.getItem('token');
     }
-    let requestData = getRequestIdentify(config, true)
+    let requestData = getRequestIdentify(config)
     removePending(requestData, true)
     config.cancelToken = new CancelToken((c) => {
         pending[requestData] = c;

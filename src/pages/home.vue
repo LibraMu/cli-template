@@ -1,5 +1,7 @@
 <template>
-	<div>123</div>
+	<div>
+		这里是{{$route.name}}
+	</div>
 </template>
 
 <script>
